@@ -1,1 +1,196 @@
-Pl�nio GitHub homepage
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlinioFM | Kernel v1.976</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+	</style>
+
+</head>
+<body class="p-4 md:p-10">
+
+    <div class="scanline"></div>
+
+    <div class="max-w-5xl mx-auto">
+        <header class="mb-10">
+            <pre class="text-xs md:text-sm text-green-500 font-bold leading-none">
+  _____  _      _____ _   _ _____ ____  ______ __  __ 
+ |  __ \| |    |_   _| \ | |_   _/ __ \|  ____|  \/  |
+ | |__) | |      | | |  \| | | || |  | | |__  | \  / |
+ |  ___/| |      | | | . ` | | || |  | |  __| | |\/| |
+ | |    | |____ _| |_| |\  |_| || |__| | |    | |  | |
+ |_|    |______|_____|_| \_|_____\____/|_|    |_|  |_|
+            </pre>
+            <div class="mt-4 text-xs font-mono text-gray-500 uppercase tracking-widest">
+                Sign: Aries_v2.0 | Coffee_Level: 85% | Horoscope_Alert: "A great day for refactoring life"
+            </div>
+        </header>
+
+        <section class="mb-12">
+            <div class="prompt">whoami --full</div>
+            <div class="output-box mt-4">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="md:col-span-2">
+                        <p><span class="text-yellow-500 font-bold">NAME:</span> Plinio Fernandes Mendes</p>
+                        <p><span class="text-yellow-500 font-bold">BORN:</span> 1976 (Vitoria, ES - Brazil)</p>
+                        <p><span class="text-yellow-500 font-bold">INIT_CODE:</span> 1985 (Age 9) via Sharp PC-1211 / MSX (BASIC)</p>
+                        <p><span class="text-yellow-500 font-bold">CURRENT_STATUS:</span> Software engineer, married, father of 2 children, living in Great Belo Horizonte</p>
+		                <div class="p-4 bg-gray-900/50 terminal-border rounded">
+		                	<div class="text-blue-400 font-bold">Message of the day</div>
+		                    <p class="text-xs italic" id="message"></p>
+		                </div>
+
+                    </div>
+                    <img src="images/whoami.png" class="w-full h-40 object-cover rounded">
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <div class="prompt">./list_projects.sh</div>
+            <div class="mt-4 space-y-4">
+            	<a href="https://games.pliniofm.com">
+		            <div class="flex flex-col md:flex-row gap-6 p-4 border border-gray-800 bg-black/50">
+	                    <img src="images/gamesfm.jpg" class="w-full md:w-32 h-20 object-cover">
+	                    <div>
+	                        <p class="font-bold text-green-400 uppercase">Games PlinioFM</p>
+	                        <p class="text-xs opacity-70">
+	                        	Mobile Android Suite: Hangman, Tic-Tac-Toe, Unblock. Built for logic training.<br>
+	                        	games.pliniofm.com
+	                       	</p>
+	                    </div>
+		            </div>
+                </a>
+            	<a href="https://tools.pliniofm.com">
+	                <div class="flex flex-col md:flex-row gap-6 p-4 border border-gray-800 bg-black/50">
+	                    <img src="images/toolsfm.jpg" class="w-full md:w-32 h-20 object-cover">
+	                    <div>
+	                        <p class="font-bold text-green-400 uppercase">Tools PlinioFM</p>
+	                        <p class="text-xs opacity-70">
+	                        	Online Multi-tools: Hashing, Sorting, Formatters, Cases, Date calculator, etc.<br>
+	                        	tools.pliniofm.com
+	                       	</p>
+	                    </div>
+	                </div>
+	            </a>
+            	<a href="https://smartlion.com.br">
+	                <div class="flex flex-col md:flex-row gap-6 p-4 border border-gray-800 bg-black/50">
+	                    <img src="images/smartlion-logo.png" class="w-full md:w-32 h-20 object-cover">
+	                    <div>
+	                        <p class="font-bold text-green-400 uppercase">SmartLion</p>
+	                        <p class="text-xs opacity-70">
+	                        	Tax Calculator for Stock Investors. Tech Stack: Python, Java, MongoDB, Handlebars.<br>
+	                        	smartlion.com.br
+	                        </p>
+	                    </div>
+	                </div>
+                </a>
+            	<a href="https://nayterapias.com.br">
+	                <div class="flex flex-col md:flex-row gap-6 p-4 border border-gray-800 bg-black/50">
+	                    <img src="images/nayterapias-logo.jpg" class="w-full md:w-32 h-20 object-cover">
+	                    <div>
+	                        <p class="font-bold text-green-400 uppercase">NayTerapias</p>
+	                        <p class="text-xs opacity-70">
+	                        	Digital presence to promote my wife's work as a holistic therapist.<br>
+	                        	nayterapias.com.br
+	                        </p>
+	                    </div>
+	                </div>
+                </a>
+            	<a href="https://github.com/pliniofm/msx">
+	                <div class="flex flex-col md:flex-row gap-6 p-4 border border-gray-800 bg-black/50">
+	                    <img src="images/msx.jpg" class="w-full md:w-32 h-20 object-cover">
+	                    <div>
+	                        <p class="font-bold text-green-400 uppercase">MSX</p>
+	                        <p class="text-xs opacity-70">
+	                        	A repository of 8-bit programs on an MSX computer from the 1980s, when I was between 10 and 14 years old.<br>
+	                        	github.com/pliniofm/msx
+	                       	</p>
+	                    </div>
+	                </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <div class="prompt">cat /etc/media_collections.conf</div>
+            <div class="grid md:grid-cols-2 gap-6 mt-4">
+                <div class="border border-gray-800 p-4 bg-black/40">
+                	<a href="https://www.youtube.com/@pliniofm">
+	                    <img src="images/youtube.jpg" class="img-terminal w-full h-32 object-cover mb-3">
+	                    <p class="text-red-500 font-bold">youtube.com/@pliniofm</p>
+	                    <p class="text-[10px] text-gray-500">
+	                    	Plínio FM is a personal YouTube channel featuring music covers, creative duos, and life milestones, 
+	                    	serving as a creative outlet that complements his digital tools hub.
+	                    </p>
+	                </a>
+                </div>
+                <div class="border border-gray-800 p-4 bg-black/40">
+                	<a href="https://www.youtube.com/@tvxumbreca">
+	                    <img src="images/tvxumbreca.jpg" class="img-terminal w-full h-32 object-cover mb-3">
+	                    <p class="text-red-500 font-bold">youtube.com/@tvxumbreca</p>
+	                    <p class="text-[10px] text-gray-500">
+	                    	TV Xumbreca is Plinio's creative lab, blending family archives of his daughter Maria Clara with musical parodies. It merges his "PlinioFM" persona, audio-video editing, and musical artistry.
+	                    </p>
+	                </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="prompt">netstat -an | grep CONNECTED</div>
+            <div class="mt-6 flex flex-wrap gap-4">
+                <a href="https://linkedin.com/in/pliniofm/" class="px-4 py-1 border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition text-xs">LINKEDIN</a>
+                <a href="https://github.com/pliniofm" class="px-4 py-1 border border-gray-500 text-gray-500 hover:bg-gray-500 hover:text-white transition text-xs">GITHUB</a>
+                <a href="https://youtube.com/@pliniofm" class="px-4 py-1 border border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition text-xs">YOUTUBE</a>
+                <a href="https://instagram.com/pliniofm/" class="px-4 py-1 border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white transition text-xs">INSTAGRAM</a>
+                <a href="https://tiktok.com/@pliniofm" class="px-4 py-1 border border-white text-white hover:bg-white hover:text-black transition text-xs">TIKTOK</a>
+                <a href="https://facebook.com/pliniofm" class="px-4 py-1 border border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white transition text-xs">FACEBOOK</a>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="prompt"><span class="cursor"></span></div>
+        </section>
+
+        <footer class="text-center text-xs text-gray-700 py-10">
+            <p>&copy; 1976-<script>document.write(new Date().getFullYear());</script> pliniofm</p>
+            <p class="mt-2 tracking-widest">Developed with care and nostalgia. &lt;EOF&gt;</p>
+        </footer>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+    	const messages = [
+    		'"Insert the disk #35 and press ENTER. (some 8-bits program)"',
+    		'"640k ought to be enough for anybody" (Bill Gates)',
+    		'"There are 10 types of people in the world: those who understand binary and those who don\'t."',
+    		'"Why do programmers prefer dark mode? Because light attracts bugs."',
+    		'"It\'s not a bug; it\'s an undocumented feature." (Anonymous)',
+    		'"First, solve the problem. Then, write the code" (John Johnson)',
+    		'"Code is like humor. When you have to explain it, it’s bad." (Cory House)',
+    		'"Software is like sex: it’s better when it’s free." (Linus Torvalds)',
+    		'"Software and cathedrals are much the same — first we build them, then we pray."',
+    		'"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program." (Linus Torvalds)',
+    		'"Programmer: A machine that turns coffee into code." (Anonymous)',
+    		'"When I wrote this code, only God and I understood what I did. Now only God knows." (Anonymous)',
+    		'"I’m not a great programmer; I’m just a good programmer with great habits." (Kent Beck)',
+    		'"Software comes from heaven when you have good hardware." (Ken Olsen)',
+    		'"There is always one more bug to fix." (Ellen Ullman)',
+    		'"If debugging is the process of removing bugs, then programming must be the process of putting them in." (Sam Redwine)',
+    		'"Talk is cheap. Show me the code." (Linus Torvalds)',
+    		'"Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code." (Dan Salomon)',
+    		'"If, at first, you do not succeed, call it version 1.0." (Khayri R.R. Woulfe)',
+    		'"Computers are fast; developers keep them slow." (Anonymous)',
+    		'"Works on my machine" (Anonymous)\nFun Fact: The emergence of Docker and containers was motivated precisely to put an end to this phrase, aiming to ensure that the development environment is identical to production.',
+    	];
+    	let el = document.getElementById("message");
+    	let messageIdx = Math.floor(Math.random() * messages.length);
+    	el.innerText = messages[messageIdx];
+    </script>
+</body>
+</html>
