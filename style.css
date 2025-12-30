@@ -1,0 +1,30 @@
+body { 
+    font-family: 'Fira Code', monospace; 
+    background-color: #0c0c0c; 
+    color: #d1d1d1;
+    line-height: 1.6;
+}
+.terminal-border { border: 1px solid #1f2937; }
+.scanline {
+    width: 100%; height: 2px;
+    background: rgba(74, 222, 128, 0.1);
+    position: absolute; animation: scan 4s linear infinite;
+}
+@keyframes scan { from { top: 0; } to { top: 100%; } }
+.prompt::before { content: "pliniofm@linux:~$ "; color: #4ade80; font-weight: bold; }
+.dir { color: #60a5fa; font-weight: bold; }
+.exe { color: #f87171; font-weight: bold; }
+.comment { color: #6b7280; font-style: italic; }
+.output-box { 
+    background: #161616; 
+    border: 1px solid #333; 
+    padding: 20px;
+    border-left: 4px solid #4ade80;
+}
+.cursor { display: inline-block; width: 8px; height: 18px; background: #4ade80; animation: blink 1s infinite; vertical-align: middle; margin-top: -5px;}
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0c0c0c; }
+::-webkit-scrollbar-thumb { background: #333; }
+img { filter: grayscale(1) contrast(1.2) brightness(0.8); border: 1px solid #333; }
+img:hover { filter: none; border-color: #4ade80; transition: 0.3s; }
