@@ -1,0 +1,3 @@
+Sitemap: https://pliniofm.com/sitemap.xml
+User-agent: *
+Allow: /
